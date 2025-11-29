@@ -94,32 +94,19 @@
       margin: 0;
     }
 
-    .card-content {
-      flex-grow: 1;
-      min-height: 210px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .desc {
+      min-height: 120px;
+      margin-bottom: 10px;
     }
 
     @media (max-width: 800px) {
-      .card-title {
-        min-height: auto;
-      }
-      .card-content {
-        min-height: auto;
-      }
-    }
-
-    .card a {
-      margin-top: 20px;
-      text-decoration: none;
-      color: #ff7aa8;
-      font-weight: 600;
+      .card-title { min-height: auto; }
+      .desc { min-height: auto; }
     }
 
     .tags {
-      margin-top: 10px;
+      margin-top: 0;
+      margin-bottom: 25px;
     }
 
     .tag {
@@ -131,6 +118,12 @@
       font-size: 0.75rem;
       margin-right: 6px;
       margin-top: 8px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #ff7aa8;
+      font-weight: 600;
     }
 
     footer {
@@ -163,9 +156,7 @@
 
   <section>
     <h2>About Me</h2>
-    <p>
-      I’m a business student interested in data analytics, art, and game design.
-    </p>
+    <p>I’m a business student interested in data analytics, art, and game design.</p>
   </section>
 
   <section>
@@ -178,18 +169,18 @@
           <h3>Market Sentiment Web Tool</h3>
         </div>
 
-        <div class="card-content">
+        <div class="desc">
           <p>
             A web app that leverages financial data to analyze stock price trends and runs
             multi-model sentiment analysis to evaluate short-term market mood.
           </p>
+        </div>
 
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">APIs</span>
-            <span class="tag">NLP</span>
-          </div>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">APIs</span>
+          <span class="tag">NLP</span>
         </div>
 
         <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">
@@ -202,18 +193,18 @@
           <h3>MBTA Station Finder</h3>
         </div>
 
-        <div class="card-content">
+        <div class="desc">
           <p>
             Finds the nearest MBTA station and displays current local weather
             along with nearby Ticketmaster events.
           </p>
+        </div>
 
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">JSON</span>
-            <span class="tag">HTML/CSS</span>
-          </div>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">JSON</span>
+          <span class="tag">HTML/CSS</span>
         </div>
 
         <a href="https://github.com/taubao/MBTA-Web-App-Project" target="_blank">
@@ -226,19 +217,19 @@
           <h3>GoDaddy Data Science Field Project</h3>
         </div>
 
-        <div class="card-content">
+        <div class="desc">
           <p>
             A client-sponsored analytics project studying stress drivers for microbusiness
             owners and offering strategic insights.
           </p>
+        </div>
 
-          <div class="tags">
-            <span class="tag">R</span>
-            <span class="tag">Logistic Regression</span>
-            <span class="tag">K-Modes Clustering</span>
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Client Project</span>
-          </div>
+        <div class="tags">
+          <span class="tag">R</span>
+          <span class="tag">Logistic Regression</span>
+          <span class="tag">K-Modes Clustering</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Client Project</span>
         </div>
 
         <a href="#">
