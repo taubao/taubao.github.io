@@ -61,13 +61,16 @@
       line-height: 1.7;
     }
 
+    /* PROJECT CARD GRID */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 25px;
       margin-top: 20px;
+      align-items: start; /* ensures TOP alignment of all cards */
     }
 
+    /* INDIVIDUAL CARD */
     .card {
       background: #fff;
       padding: 20px;
@@ -78,6 +81,7 @@
 
       display: flex;
       flex-direction: column;
+      height: 100%;
     }
 
     .card:hover {
@@ -85,12 +89,22 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
+    /* Wrapper that forces even spacing */
     .card-content {
       flex-grow: 1;
     }
 
+    /* GitHub link spacing */
     .card a {
       margin-top: 20px;
+      text-decoration: none;
+      color: #ff7aa8;
+      font-weight: 600;
+    }
+
+    /* TAGS */
+    .tags {
+      margin-top: 10px;
     }
 
     .tag {
@@ -104,6 +118,7 @@
       margin-top: 8px;
     }
 
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 30px;
@@ -125,7 +140,7 @@
 
   <header>
     <h1>Hi, I'm Tauria!</h1>
-    <p class="subtitle">Welcome to my portfolio. Some of my data science projects are featured here—they are constantly being updated! </p>
+    <p class="subtitle">Welcome to my portfolio. Some of my data science projects are featured here—they are constantly being updated!</p>
     <div class="accent"></div>
   </header>
 
@@ -141,34 +156,36 @@
 
     <div class="projects">
 
-    <div class="card">
-      <h3>Market Sentiment Web Tool</h3>
+      <!-- CARD 1 -->
+      <div class="card">
+        <h3>Market Sentiment Web Tool</h3>
 
-      <div class="card-content">
-        <p>
-          A web app that leverages financial data to analyze stock price trends 
-          and runs multi-model sentiment analysis to evaluate short-term market mood.
-        </p>
+        <div class="card-content">
+          <p>
+            A web app that leverages financial data to analyze stock price trends and runs
+            multi-model sentiment analysis to evaluate short-term market mood.
+          </p>
 
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">APIs</span>
-          <span class="tag">NLP</span>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">APIs</span>
+            <span class="tag">NLP</span>
+          </div>
         </div>
+
+        <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">
+          View on GitHub →
+        </a>
       </div>
 
-      <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">
-        View on GitHub →
-      </a>
-    </div>
-
+      <!-- CARD 2 -->
       <div class="card">
         <h3>MBTA Station Finder</h3>
 
         <div class="card-content">
           <p>
-            Finds the nearest MBTA station and displays current local weather 
+            Finds the nearest MBTA station and displays current local weather
             along with nearby Ticketmaster events.
           </p>
 
@@ -185,13 +202,14 @@
         </a>
       </div>
 
+      <!-- CARD 3 -->
       <div class="card">
         <h3>GoDaddy Data Science Field Project</h3>
 
         <div class="card-content">
           <p>
-            A client-sponsored analytics project studying stress drivers for 
-            microbusiness owners and offering strategic insights.
+            A client-sponsored analytics project studying stress drivers for microbusiness
+            owners and offering strategic insights.
           </p>
 
           <div class="tags">
