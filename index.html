@@ -94,14 +94,22 @@
       margin: 0;
     }
 
+    .card-content {
+      flex-grow: 1;
+    }
+
     .desc {
-      min-height: 120px;
+      min-height: 130px;
       margin-bottom: 10px;
     }
 
     @media (max-width: 800px) {
-      .card-title { min-height: auto; }
-      .desc { min-height: auto; }
+      .card-title {
+        min-height: auto;
+      }
+      .desc {
+        min-height: auto;
+      }
     }
 
     .tags {
@@ -156,7 +164,9 @@
 
   <section>
     <h2>About Me</h2>
-    <p>I’m a business student interested in data analytics, art, and game design.</p>
+    <p>
+      I’m a business student interested in data analytics, art, and game design.
+    </p>
   </section>
 
   <section>
@@ -169,18 +179,20 @@
           <h3>Market Sentiment Web Tool</h3>
         </div>
 
-        <div class="desc">
-          <p>
-            A web app that leverages financial data to analyze stock price trends and runs
-            multi-model sentiment analysis to evaluate short-term market mood.
-          </p>
-        </div>
+        <div class="card-content">
+          <div class="desc">
+            <p>
+              A web app that leverages financial data to analyze stock price trends and runs
+              multi-model sentiment analysis to evaluate short-term market mood.
+            </p>
+          </div>
 
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">APIs</span>
-          <span class="tag">NLP</span>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">APIs</span>
+            <span class="tag">NLP</span>
+          </div>
         </div>
 
         <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">
@@ -193,18 +205,20 @@
           <h3>MBTA Station Finder</h3>
         </div>
 
-        <div class="desc">
-          <p>
-            Finds the nearest MBTA station and displays current local weather
-            along with nearby Ticketmaster events.
-          </p>
-        </div>
+        <div class="card-content">
+          <div class="desc">
+            <p>
+              Finds the nearest MBTA station and displays current local weather
+              along with nearby Ticketmaster events.
+            </p>
+          </div>
 
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">JSON</span>
-          <span class="tag">HTML/CSS</span>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">JSON</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
         </div>
 
         <a href="https://github.com/taubao/MBTA-Web-App-Project" target="_blank">
@@ -217,19 +231,21 @@
           <h3>GoDaddy Data Science Field Project</h3>
         </div>
 
-        <div class="desc">
-          <p>
-            A client-sponsored analytics project studying stress drivers for microbusiness
-            owners and offering strategic insights.
-          </p>
-        </div>
+        <div class="card-content">
+          <div class="desc">
+            <p>
+              A client-sponsored analytics project studying stress drivers for microbusiness
+              owners and offering strategic insights.
+            </p>
+          </div>
 
-        <div class="tags">
-          <span class="tag">R</span>
-          <span class="tag">Logistic Regression</span>
-          <span class="tag">K-Modes Clustering</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Client Project</span>
+          <div class="tags">
+            <span class="tag">R</span>
+            <span class="tag">Logistic Regression</span>
+            <span class="tag">K-Modes Clustering</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Client Project</span>
+          </div>
         </div>
 
         <a href="#">
