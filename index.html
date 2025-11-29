@@ -75,6 +75,9 @@
       box-shadow: 0 3px 12px rgba(0,0,0,0.06);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
       border: 1px solid #f2f2f2;
+
+      display: flex;
+      flex-direction: column;
     }
 
     .card:hover {
@@ -82,24 +85,14 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.3rem;
-      color: #444;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: #666;
+    .card-content {
+      flex-grow: 1;
     }
 
     .card a {
-      text-decoration: none;
-      color: #ff7aa8;
-      font-weight: 600;
+      margin-top: 20px;
     }
 
-    /* Skill Tags */
     .tag {
       display: inline-block;
       padding: 4px 10px;
@@ -148,44 +141,71 @@
 
     <div class="projects">
 
-      <div class="card">
-        <h3>Market Sentiment Web Tool</h3>
-        <p>A web app that leverages financial data to analyze stock price trends and runs multi-model sentiment analysis to evaluate short-term market mood.</p>
+    <div class="card">
+      <h3>Market Sentiment Web Tool</h3>
+
+      <div class="card-content">
+        <p>
+          A web app that leverages financial data to analyze stock price trends 
+          and runs multi-model sentiment analysis to evaluate short-term market mood.
+        </p>
+
         <div class="tags">
           <span class="tag">Python</span>
           <span class="tag">Flask</span>
           <span class="tag">APIs</span>
           <span class="tag">NLP</span>
         </div>
-        <br><br>
-        <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">View on GitHub →</a>
       </div>
+
+      <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">
+        View on GitHub →
+      </a>
+    </div>
 
       <div class="card">
         <h3>MBTA Station Finder</h3>
-        <p>Finds the nearest MBTA station and displays current local weather + Ticketmaster events in the area.</p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">JSON</span>
-          <span class="tag">HTML/CSS</span>
+
+        <div class="card-content">
+          <p>
+            Finds the nearest MBTA station and displays current local weather 
+            along with nearby Ticketmaster events.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">JSON</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
         </div>
-        <br><br>
-        <a href="https://github.com/taubao/MBTA-Web-App-Project" target="_blank">View on GitHub →</a>
+
+        <a href="https://github.com/taubao/MBTA-Web-App-Project" target="_blank">
+          View on GitHub →
+        </a>
       </div>
 
       <div class="card">
         <h3>GoDaddy Data Science Field Project</h3>
-        <p>A client-sponsored analytics project studying stress drivers for microbusiness owners and offering strategic insights.</p>
-        <div class="tags">
-          <span class="tag">R</span>
-          <span class="tag">Logistic Regression</span>
-          <span class="tag">K-Modes Clustering</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Client Project</span>
+
+        <div class="card-content">
+          <p>
+            A client-sponsored analytics project studying stress drivers for 
+            microbusiness owners and offering strategic insights.
+          </p>
+
+          <div class="tags">
+            <span class="tag">R</span>
+            <span class="tag">Logistic Regression</span>
+            <span class="tag">K-Modes Clustering</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Client Project</span>
+          </div>
         </div>
-        <br><br>
-        <a href="#">Private project (client use only)</a>
+
+        <a href="#">
+          Private project (client use only)
+        </a>
       </div>
 
     </div>
