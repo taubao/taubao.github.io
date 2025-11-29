@@ -34,6 +34,7 @@
       font-weight: 300;
       color: #777;
       margin-top: -10px;
+      line-height: 1.5;
     }
 
     .accent {
@@ -60,13 +61,16 @@
       line-height: 1.7;
     }
 
+    /* PROJECT GRID */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 25px;
       margin-top: 20px;
+      align-items: stretch;
     }
 
+    /* CARD */
     .card {
       background: #fff;
       padding: 20px;
@@ -84,34 +88,25 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
-    .card-title {
-      min-height: 72px;
-      display: flex;
-      align-items: flex-start;
-    }
-
     .card-title h3 {
       margin: 0;
+      font-size: 1.3rem;
+      color: #444;
     }
 
+    /* CARD CONTENT ALIGNS AUTOMATICALLY */
     .card-content {
       flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .desc {
-      min-height: 130px;
       margin-bottom: 10px;
     }
 
-    @media (max-width: 800px) {
-      .card-title {
-        min-height: auto;
-      }
-      .desc {
-        min-height: auto;
-      }
-    }
-
+    /* TAGS */
     .tags {
       margin-top: 0;
       margin-bottom: 25px;
@@ -174,6 +169,7 @@
 
     <div class="projects">
 
+      <!-- CARD 1 -->
       <div class="card">
         <div class="card-title">
           <h3>Market Sentiment Web Tool</h3>
@@ -200,6 +196,7 @@
         </a>
       </div>
 
+      <!-- CARD 2 -->
       <div class="card">
         <div class="card-title">
           <h3>MBTA Station Finder</h3>
@@ -208,7 +205,7 @@
         <div class="card-content">
           <div class="desc">
             <p>
-              Finds the nearest MBTA station and displays current local weather
+              Finds the nearest MBTA station and displays local weather
               along with nearby Ticketmaster events.
             </p>
           </div>
@@ -226,6 +223,7 @@
         </a>
       </div>
 
+      <!-- CARD 3 -->
       <div class="card">
         <div class="card-title">
           <h3>GoDaddy Data Science Field Project</h3>
@@ -241,8 +239,8 @@
 
           <div class="tags">
             <span class="tag">R</span>
-            <span class="tag">Logistic Regression</span>
-            <span class="tag">K-Modes Clustering</span>
+            <span class="tag">K-Modes</span>
+            <span class="tag">Regression</span>
             <span class="tag">Machine Learning</span>
             <span class="tag">Client Project</span>
           </div>
@@ -258,7 +256,9 @@
 
   <footer>
     <div class="social">
-      <a href="https://www.linkedin.com/in/taubao/" target="_blank">Connect on LinkedIn</a>
+      <a href="https://www.linkedin.com/in/taubao/" target="_blank">
+        Connect on LinkedIn
+      </a>
     </div>
   </footer>
 
