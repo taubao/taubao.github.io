@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name</title>
 
-  <!-- Google Font: Poppins (professional + cute) -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -37,7 +37,6 @@
       margin-top: -10px;
     }
 
-    /* Cute accent line */
     .accent {
       width: 60px;
       height: 6px;
@@ -46,7 +45,6 @@
       border-radius: 3px;
     }
 
-    /* Section styling */
     section {
       max-width: 850px;
       margin: 50px auto;
@@ -63,7 +61,6 @@
       line-height: 1.7;
     }
 
-    /* Project cards */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -102,7 +99,18 @@
       font-weight: 600;
     }
 
-    /* Footer */
+    /* Skill Tags */
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #ffe6ef;
+      color: #cc4d7a;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      margin-right: 6px;
+      margin-top: 8px;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -123,15 +131,15 @@
 <body>
 
   <header>
-    <h1>Placeholder</h1>
-    <p class="subtitle">Placeholder</p>
+    <h1>Hi, I'm Tauria!</h1>
+    <p class="subtitle">Welcome to my portfolio. Some of my data science projects are featured here—they are constantly being updated! </p>
     <div class="accent"></div>
   </header>
 
   <section>
     <h2>About Me</h2>
     <p>
-      Placeholder.
+      I’m a business student interested in data analytics, art, and game design.
     </p>
   </section>
 
@@ -142,21 +150,41 @@
 
       <div class="card">
         <h3>Market Sentiment Web Tool</h3>
-        <p>A Python + Flask project that analyzes stock price trends and financial news 
-        using multiple sentiment models.</p>
-        <a href="https://github.com/YOURUSERNAME/YOURREPO" target="_blank">View on GitHub →</a>
+        <p>A web app that leverages financial data to analyze stock price trends and runs multi-model sentiment analysis to evaluate short-term market mood.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">APIs</span>
+          <span class="tag">NLP</span>
+        </div>
+        <br><br>
+        <a href="https://github.com/taubao/Market-Sentiment-Analysis" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h3>MBTA Station Finder</h3>
+        <p>Finds the nearest MBTA station and displays current local weather + Ticketmaster events in the area.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">JSON</span>
+          <span class="tag">HTML/CSS</span>
+        </div>
+        <br><br>
+        <a href="https://github.com/taubao/MBTA-Web-App-Project" target="_blank">View on GitHub →</a>
       </div>
 
       <div class="card">
         <h3>GoDaddy Data Science Field Project</h3>
-        <p>Placeholder</p>
-        <a href="#">Confidential project for client use only.</a>
-      </div>
-
-      <div class="card">
-        <h3>Placeholder</h3>
-        <p>Placeholder</p>
-        <a href="https://github.com/YOURUSERNAME/YOURREPO" target="_blank">View on GitHub →</a>
+        <p>A client-sponsored analytics project studying stress drivers for microbusiness owners and offering strategic insights.</p>
+        <div class="tags">
+          <span class="tag">R</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Survey Analytics</span>
+          <span class="tag">Client Project</span>
+        </div>
+        <br><br>
+        <a href="#">Private project (client use only)</a>
       </div>
 
     </div>
@@ -164,7 +192,7 @@
 
   <footer>
     <div class="social">
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank">Connect on LinkedIn</a>
+      <a href="https://www.linkedin.com/in/taubao/" target="_blank">Connect on LinkedIn</a>
     </div>
   </footer>
 
